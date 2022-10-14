@@ -6,6 +6,7 @@ const Form = () => {
     const [amount, setAmount] = useState("");
     const [isExpense, setExpense] = useState(false);
 
+    const generateID = () => Math.round(Math.random() * 1000);
     const handleSave = () => {
         if(!desc || !amount){
             alert("Informe a descrição e o valor!");
